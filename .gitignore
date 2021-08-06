@@ -1,0 +1,10 @@
+.vs
+.vscode
+.vsconfig
+Assembly-CSharp.csproj
+Library
+Logs
+UserSettings
+meu-primeiro-projeto.sln
+obj
+
