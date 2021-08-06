@@ -36,8 +36,11 @@ public class Variaveis : MonoBehaviour
         }
         */
 
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
+        //float h = Input.GetAxis("Horizontal");
+        //float v = Input.GetAxis("Vertical");
+
+        float h = Input.GetAxis("Mouse X");
+        float v = Input.GetAxis("Mouse Y");
         transform.Translate(new Vector2(h * Time.deltaTime, v * Time.deltaTime));
     }
 }
