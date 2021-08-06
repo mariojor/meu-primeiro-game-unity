@@ -14,6 +14,7 @@ public class Variaveis : MonoBehaviour
 
     void Update()
     {
+        /**
         //Aperta e solta ativa, mesmo que fique segurando não faz nada.
         if (Input.GetKeyUp(KeyCode.RightArrow))
         {
@@ -33,5 +34,10 @@ public class Variaveis : MonoBehaviour
         {
             transform.Translate(new Vector3(0, -vel * Time.deltaTime, 0));
         }
+        */
+
+        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
+        transform.Translate(new Vector2(h * Time.deltaTime, v * Time.deltaTime));
     }
 }
