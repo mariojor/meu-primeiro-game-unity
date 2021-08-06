@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Variaveis : MonoBehaviour
 {
-    public float vel = 0.1f;
-    public Renderer quad;
+
+    private float vel = 2.5f;
 
     void Start()
     {
@@ -14,9 +14,24 @@ public class Variaveis : MonoBehaviour
 
     void Update()
     {
-        Vector2 offSet = new Vector2(vel * Time.deltaTime, 0);
-
-        quad.material.mainTextureOffset += offSet;
-
+        //Aperta e solta ativa, mesmo que fique segurando não faz nada.
+        if (Input.GetKeyUp(KeyCode.RightArrow))
+        {
+            transform.Translate(new Vector3(vel * Time.deltaTime, 0, 0));
+        }
+        //Aperta ativa, exemplo de onde você precisa ficar apertando a tecla.
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            transform.Translate(new Vector3(-vel * Time.deltaTime, 0, 0));
+        }
+        //Aperta e segura ativado, Jogo de nave aperta e segura fica disparando.
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.Translate(new Vector3(0, vel * Time.deltaTime, 0));
+        }
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.Translate(new Vector3(0, -vel * Time.deltaTime, 0));
+        }
     }
 }
