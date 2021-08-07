@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 628879844}
   m_Layer: 0
   m_Name: piso
-  m_TagString: Untagged
+  m_TagString: piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -237,7 +237,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.037256002, y: -0.10245347}
+  m_Offset: {x: 0.037256002, y: 2.3159783}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -248,7 +248,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.1431165, y: 5.795093}
+  m_Size: {x: 5.1431165, y: 0.9582294}
   m_EdgeRadius: 0
 --- !u!212 &628879845
 SpriteRenderer:
@@ -326,12 +326,12 @@ GameObject:
   - component: {fileID: 691354209}
   - component: {fileID: 691354208}
   - component: {fileID: 691354207}
-  - component: {fileID: 691354211}
   - component: {fileID: 691354210}
   - component: {fileID: 691354212}
+  - component: {fileID: 691354211}
   m_Layer: 0
   m_Name: mario32bits
-  m_TagString: Untagged
+  m_TagString: mario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -343,7 +343,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 691354206}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 547194d7819eafc448ccccd9900a6aa6, type: 3}
   m_Name: 
@@ -407,7 +407,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 691354206}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.26, y: 1.71, z: 0}
+  m_LocalPosition: {x: -1.82, y: 3.1, z: 0}
   m_LocalScale: {x: 0.07018604, y: 0.064623035, z: 0.06686295}
   m_Children: []
   m_Father: {fileID: 0}
@@ -434,8 +434,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!68 &691354211
-EdgeCollider2D:
+--- !u!70 &691354211
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -448,25 +448,8 @@ EdgeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -7.119203, y: -8.523394}
-  - {x: -5.1239595, y: -8.724077}
-  - {x: -4.6290216, y: -7.620918}
-  - {x: 3.1338098, y: -6.9178667}
-  - {x: 9.543966, y: -5.6678753}
-  - {x: 7.2582483, y: 0.26157868}
-  - {x: 7.6520963, y: 7.169817}
-  - {x: 2.05626, y: 6.976701}
-  - {x: -2.5245984, y: 6.827753}
-  - {x: -4.910648, y: 4.1046557}
-  - {x: -5.5841384, y: 0.2752856}
-  - {x: -8.813565, y: -1.7038046}
-  - {x: -7.385514, y: -8.5233965}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
+  m_Size: {x: 16.93, y: 16.74}
+  m_Direction: 0
 --- !u!114 &691354212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -494,7 +477,7 @@ GameObject:
   - component: {fileID: 1146616838}
   m_Layer: 0
   m_Name: circulo
-  m_TagString: Untagged
+  m_TagString: madeira
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
