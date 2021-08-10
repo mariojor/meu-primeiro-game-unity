@@ -6,6 +6,7 @@ public class MoveMario : MonoBehaviour
 {
 
     public float vel = 2.5f;
+    public int cont = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,15 @@ public class MoveMario : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(new Vector2(-vel * Time.deltaTime, 0));
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D outro)
+    {
+        if (outro.gameObject.CompareTag("moeda"))
+        {
+            cont++;
+            Destroy(outro.gameObject);
         }
     }
 }
