@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8656446927507857144
+--- !u!1 &1172209333235827820
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,36 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3728487551019723783}
-  - component: {fileID: 3044215392214236955}
+  - component: {fileID: 160084618072005000}
+  - component: {fileID: 2228744217880033435}
+  - component: {fileID: 6823619929234002465}
   m_Layer: 0
-  m_Name: bola-pf
+  m_Name: bola
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3728487551019723783
+--- !u!4 &160084618072005000
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8656446927507857144}
+  m_GameObject: {fileID: 1172209333235827820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.3, y: -2.12, z: 0}
-  m_LocalScale: {x: 0.30611426, y: 0.2973982, z: 1}
+  m_LocalPosition: {x: -5.35, y: 0.78, z: 0}
+  m_LocalScale: {x: 0.021183306, y: 0.021183306, z: 0.021183306}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3044215392214236955
+--- !u!212 &2228744217880033435
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8656446927507857144}
+  m_GameObject: {fileID: 1172209333235827820}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -71,14 +72,27 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 47a88023c0669974ba6f8adf71c7920d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bcdeaddd765e56348aa02a6bc8bad835, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 9.7, y: 9.8}
+  m_Size: {x: 35.00738, y: 35.44}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6823619929234002465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172209333235827820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe7f07a5d7f44c4484fbca8b2aa44a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vel: 2.5
