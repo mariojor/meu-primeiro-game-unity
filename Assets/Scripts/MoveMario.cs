@@ -7,7 +7,9 @@ public class MoveMario : MonoBehaviour
 
     public float vel = 2.5f;
     public int cont = 0;
-    // Start is called before the first frame update
+    public GameObject efeitoCoin;
+    public AudioClip coin;
+
     void Start()
     {
         
@@ -31,8 +33,9 @@ public class MoveMario : MonoBehaviour
     {
         if (outro.gameObject.CompareTag("moeda"))
         {
+            Gerenciador.inst.PlayAudio(coin);
             cont++;
-            Destroy(outro.gameObject);
+            Destroy(outro.gameObject); 
         }
     }
 }

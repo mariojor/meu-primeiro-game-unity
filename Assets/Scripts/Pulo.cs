@@ -8,6 +8,7 @@ public class Pulo : MonoBehaviour {
     public Rigidbody2D mario;
     public bool liberaPulo = false;
     public int duplo = 2;
+    public AudioClip puloSom;
     void Start()
     {
         
@@ -22,6 +23,7 @@ public class Pulo : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 mario.AddForce(new Vector2(0, forca * Time.deltaTime), ForceMode2D.Impulse);
+                Gerenciador.inst.PlayAudio(puloSom);
                 duplo--;
             }
         }
